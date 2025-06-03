@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <title>The Bizarre Library</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="/styles/navbar.css">
+<nav class="navbar">
+    <div class="logo">
+        <a href="/">The Bizarre Library</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/suggest">Suggest book</a>
+        <a href="/contact">Contact</a>
+        <a href="/updates">Updates</a>
+    </div>
+</nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    
+    if (navLinks.classList.contains('open')) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  });
+});
+</script>
+        
+<div class="single">
+    Single
+</div>
+
+        <div class="footer">
+
+    <div class="footerLogo">
+        <a href="/" class="footerLogo">The Bizzare Library</a>
+    </div>
+
+    <div class="footerBody">
+
+        <div class="footerLinks">
+            <div class="footerLinksColumn">
+                <h4 class="footerHeading">Navigation</h4>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/suggest">Suggest book</a>
+            </div>
+
+            <div class="footerLinksColumn">
+                <h4 class="footerHeading">Get in touch</h4>
+                <a href="/about">Suggest book</a>
+                <a href="/suggest">Contact</a>
+            </div>
+
+            <div class="footerLinksColumn">
+                <h4 class="footerHeading">Social Media</h4>
+                <a href="/">Instagram</a>
+                <a href="/about">Tiktok</a>
+                <a href="/suggest">x.com</a>
+            </div>
+        </div>
+
+        <div class="footerInfo">
+            <p>&copy; 2023 The Bizarre Library. All rights reserved.</p>
+            <p>Made with ❤️ by <a href="/"></a>Michal</p>
+        </div>
+
+    </div>
+
+</div>
+    </div>
+</body>
+</html>
