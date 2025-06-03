@@ -1,3 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'The Bizarre Library'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

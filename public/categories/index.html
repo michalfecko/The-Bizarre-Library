@@ -16,7 +16,12 @@
     <div class="logo">
         <a href="/">The Bizarre Library</a>
     </div>
-    <div class="links">
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="links" id="navLinks">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/suggest">Suggest book</a>
@@ -24,6 +29,23 @@
         <a href="/updates">Updates</a>
     </div>
 </nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    
+    if (navLinks.classList.contains('open')) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  });
+});
+</script>
         
 <div class="list">
     
