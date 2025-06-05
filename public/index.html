@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <link rel="stylesheet" href="/styles/navbar.css">
+        <link rel="stylesheet" href="/styles/style.css">
 <nav class="navbar">
     <div class="logo">
         <a href="/">The Bizarre Library</a>
@@ -44,6 +44,22 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       document.body.classList.remove('no-scroll');
     }
+  });
+
+  
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', function() {
+    
+    if (navLinks.classList.contains('open')) return;
+    if (window.scrollY > lastScrollY && window.scrollY > 50) {
+      
+      navbar.classList.add('navbar--hidden');
+    } else {
+      
+      navbar.classList.remove('navbar--hidden');
+    }
+    lastScrollY = window.scrollY;
   });
 });
 </script>
