@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ "styles/style.css" | relURL }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ "favicon.png" | absURL }}" sizes="32x32" type="images/png">
-    <title>The Bizarre Library</title>
-</head>
-<body>
-    <div class="container">
-        {{ partial "navbar" . }}
+{{ define "main404" }}
 
-        <div class="notfound-container">
+<div class="notfound-container">
     <h1 class="notfound-title">404 Page not found</h1>
     <p class="notfound-desc">But here are a few books with the same message in the title.</p>
     <a href="/" class="notfound-back">Back Home</a>
@@ -41,8 +27,5 @@
         </div>
     </div>
 </div>
-        
-        {{ partial "footer" . }}
-    </div>
-</body>
-</html>
+
+{{ end }} 

@@ -236,6 +236,75 @@ a {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+
+/* Not Found Page */
+ .notfound-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 0 2rem;
+  }
+
+  .notfound-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .notfound-desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+
+  .notfound-back {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 0.5px solid #000;
+    transition: color 0.2s, border-bottom 0.2s;
+  }
+
+  .notfound-back:hover {
+    color: #c00;
+    border-color: #c00;
+  }
+
+  .notfound-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+
+  .notfound-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notfound-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    margin-bottom: 0.75rem;
+    border-radius: 2px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .notfound-book-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+
+  .notfound-book-author {
+    font-size: 0.75rem;
+    color: #555;
+  }
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
   .navbar {
@@ -381,6 +450,25 @@ a {
   .footerLinksColumn a {
     font-size: 1.1rem;
   }
+
+  .notfound-container {
+      padding: 1.5rem 0.5rem;
+    }
+
+    .notfound-title {
+      font-size: 1.3rem;
+    }
+
+    .notfound-list {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .footerLinksColumn a {
+      font-size: 1.1rem;
+    }
+
+
 }
 
 /* No Scroll */

@@ -3,18 +3,131 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="http://localhost:1313/favicon.png" sizes="32x32" type="images/png">
+    <title>The Bizarre Library</title>
 </head>
 <body>
     <div class="container">
-        <h1>404 Not Found</h1>
-        <p>Sorry, the page you are looking for does not exist.</p>
-        <a href="/" class="btn">Go to Home</a>
+        <link rel="stylesheet" href="/styles/style.css">
+<nav class="navbar">
+    <div class="logo">
+        <a href="/">The Bizarre Library</a>
     </div>
-    <script src="/js/scripts.js"></script>
-    <script>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="https://tally.so/r/wbEGl7" target="_blank">Suggest book</a>
+        <a href="/updates">Updates</a>
+    </div>
+</nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    
+    if (navLinks.classList.contains('open')) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  });
+
+  
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', function() {
+    
+    if (navLinks.classList.contains('open')) return;
+    if (window.scrollY > lastScrollY && window.scrollY > 50) {
+      
+      navbar.classList.add('navbar--hidden');
+    } else {
+      
+      navbar.classList.remove('navbar--hidden');
+    }
+    lastScrollY = window.scrollY;
+  });
+});
+</script>
+
+        <div class="notfound-container">
+    <h1 class="notfound-title">404 Page not found</h1>
+    <p class="notfound-desc">But here are a few books with the same message in the title.</p>
+    <a href="/" class="notfound-back">Back Home</a>
+    <div class="notfound-list">
+        <div class="notfound-item">
+            <div class="notfound-img"></div>
+            <div class="notfound-book-title">Book name</div>
+            <div class="notfound-book-author">Author name</div>
+        </div>
+        <div class="notfound-item">
+            <div class="notfound-img"></div>
+            <div class="notfound-book-title">Book name</div>
+            <div class="notfound-book-author">Author name</div>
+        </div>
+        <div class="notfound-item">
+            <div class="notfound-img"></div>
+            <div class="notfound-book-title">Book name</div>
+            <div class="notfound-book-author">Author name</div>
+        </div>
+        <div class="notfound-item">
+            <div class="notfound-img"></div>
+            <div class="notfound-book-title">Book name</div>
+            <div class="notfound-book-author">Author name</div>
+        </div>
+    </div>
+</div>
         
-        console.log("404 page loaded");
-    </script>
+        <div class="footer">
+
+    <div class="footerLogo">
+        <a href="/" class="footerLogo">The Bizarre Library</a>
+    </div>
+
+    <div class="footerBody">
+
+        <div class="footerLinks">
+            <div class="footerLinksColumn">
+                <h4 class="footerHeading">Navigation</h4>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/suggest">Suggest book</a>
+            </div>
+
+            <div class="footerLinksColumn">
+                <h4 class="footerHeading">Get in touch</h4>
+                <a href="/about">Suggest book</a>
+                <a href="/suggest">Contact</a>
+            </div>
+
+            <div class="footerLinksColumn">
+                <h4 class="footerHeading">Social Media</h4>
+                <a href="/">Instagram</a>
+                <a href="/about">Tiktok</a>
+                <a href="/suggest">x.com</a>
+            </div>
+        </div>
+
+        <div class="footerInfo">
+            <p>&copy; 2025 The Bizarre Library. All rights reserved.</p>
+            <p>Made with ❤️ by <a href="/"></a>Michal</p>
+        </div>
+
+    </div>
+
+</div>
+    </div>
 </body>
 </html>

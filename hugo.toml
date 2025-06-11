@@ -4,3 +4,6 @@ title = 'The Bizarre Library'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+  favicon="my-icon.png"
