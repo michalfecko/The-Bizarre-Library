@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<h1 class="listTitle">Updates</h1>
+<p class="listSubtitle">What is new on The Bizarre Library</p>
+
+<div class="list listUpdates">
+  {{ range .Paginator.Pages }}
+
+    <div class="listUpdatesItem">
+      <div class="listUpdatesText">
+        <div class="listUpdatesTitle">{{ .Title }}</div>
+        <div class="listUpdatesDate">{{ .Date | time.Format ":date_long" }}</div>
+        <div class="listUpdatesSummary">{{ .Description }}</div>
+      </div>
+
+      <div class="listUpdatesImageWrap">
+        {{ with .Params.image }}
+          <img src="{{ . }}" alt="{{ $.Title }}" class="listUpdatesImage" loading="lazy">
+        {{ else }}
+          <div class="listUpdatesImage listUpdatesImage--placeholder"></div>
+        {{ end }}
+      </div>
+
+    </div>
+  {{ end }}
+</div>
+
+{{ end }}

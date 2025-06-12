@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ if eq .RelPermalink "/updates"}}
+Tvoja mama
+{{ else }}
+
+<div class="listUpdates">
+
+    {{ range .Paginator.Pages }}
+
+
+    <div class="listUptadesItem">
+        <a href={{ .Permalink }} class="listUpdateItemLink">
+
+            <img src={{ .Params.image }} alt={{ .Title }} class="listUpdateItemImage" loading="lazy">
+            
+            <div class="listUpdateItemText">
+                <p class="listIdemTitle"> {{ .Params.Type}} </p>
+                <p class="listItemTitle"> {{ .Title}} </p>
+                <p class="listItemDate"> {{ .Date}} </p> 
+
+            </div> 
+        </a>
+    </div>
+
+    {{ end }}
+</div>
+{{ end }} 
+{{ end }} 

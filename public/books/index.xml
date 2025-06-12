@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on The Bizarre Library</title>
+    <link>http://localhost:1313/books/</link>
+    <description>Recent content in Books on The Bizarre Library</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jun 2025 22:15:14 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1Q84</title>
+      <link>http://localhost:1313/books/my-post-1/</link>
+      <pubDate>Tue, 03 Jun 2025 22:15:14 +0200</pubDate>
+      <guid>http://localhost:1313/books/my-post-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1Q84</title>
+      <link>http://localhost:1313/books/my-post-2-copy-2/</link>
+      <pubDate>Tue, 03 Jun 2025 22:15:14 +0200</pubDate>
+      <guid>http://localhost:1313/books/my-post-2-copy-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1Q84</title>
+      <link>http://localhost:1313/books/my-post-3/</link>
+      <pubDate>Tue, 03 Jun 2025 22:15:14 +0200</pubDate>
+      <guid>http://localhost:1313/books/my-post-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1Q84</title>
+      <link>http://localhost:1313/books/my-post-4-copy/</link>
+      <pubDate>Tue, 03 Jun 2025 22:15:14 +0200</pubDate>
+      <guid>http://localhost:1313/books/my-post-4-copy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1Q84</title>
+      <link>http://localhost:1313/books/my-post-4/</link>
+      <pubDate>Tue, 03 Jun 2025 22:15:14 +0200</pubDate>
+      <guid>http://localhost:1313/books/my-post-4/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

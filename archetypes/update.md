@@ -1,10 +1,11 @@
 +++
 date = '{{ .Date }}'
 draft = false
-type = default
+type = update
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 author = ""
 image = ""
 imageBig = ""
-description = ""
 +++
+
+
